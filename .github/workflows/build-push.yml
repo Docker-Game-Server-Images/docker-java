@@ -75,7 +75,7 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
         with:
-          context: /home/runner/work/mineraft-paper/mineraft-paper/Java 16
+          context: /home/runner/work/docker-java/docker-java/Java 16
           push: true
           tags: qwertytech/java:16
           labels: ${{ steps.meta.outputs.labels }}
@@ -113,7 +113,7 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
         with:
-          context: /home/runner/work/mineraft-paper/mineraft-paper/Java 8
+          context: /home/runner/work/docker-java/docker-java/Java 8
           push: true
           tags: qwertytech/java:8
           labels: ${{ steps.meta.outputs.labels }}
