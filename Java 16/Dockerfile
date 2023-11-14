@@ -1,4 +1,6 @@
 FROM ubuntu:latest
+RUN apt-get update
+RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:linuxuprising/java
 RUN apt-get update
 RUN apt-get install -y oracle-java16-installer
